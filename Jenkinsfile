@@ -13,6 +13,7 @@ pipeline {
      stage('Test') { 
         steps { 
            sh 'echo "testing application..."'
+           sh 'echo $BRANCH_NAME'
         }
       }
 
